@@ -1,59 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard - Blue Cheese</title>
-  <link rel="shortcut icon" href="./assets/LogoBlueCheese.png" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Blue Cheese</title>
+    <link rel="shortcut icon" href="./assets/LogoBlueCheese.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="dashboard-page">
 
-  <aside class="dashboard-sidebar">
-    <div class="sidebar-brand">
-      <img src="./assets/LogoBlueCheese.png" alt="Logo Blue Cheese">
-    </div>
-    <nav class="sidebar-nav" aria-label="Navegação da dashboard">
-      <a href="#" class="active">Dashboard</a>
-    </nav>
-  </aside>
-
-  <main class="dashboard">
-    <header class="dashboard-header">
-      <div class="dashboard-title">
-        <h1>Temperatura e Umidade</h1>
-        <p>Acompanhamento da câmara de maturação</p>
-      </div>
-    </header>
-
-    <div class="dashboard-grid">
-      <section class="dashboard-panel">
-        <div class="dashboard-panel-header">
-          <h2>Temperatura e Umidade por Horário</h2>
-          <span>12:00 – 17:00</span>
+    <aside class="dashboard-sidebar">
+        <div class="sidebar-brand">
+            <img src="./assets/LogoBlueCheese.png" alt="Logo Blue Cheese">
         </div>
-        <div class="dashboard-chart-container">
-          <canvas id="graficoLinhas"></canvas>
-        </div>
-      </section>
+        <nav class="sidebar-nav">
+            <a href="#" class="active">Dashboard</a>
+        </nav>
+    </aside>
 
-      <section class="dashboard-panel">
-        <div class="dashboard-panel-header">
-          <h2>Médias Mensais</h2>
-          <span>Janeiro – Junho</span>
-        </div>
-        <div class="dashboard-chart-container">
-          <canvas id="graficoBarras"></canvas>
-        </div>
-      </section>
-    </div>
-  </main>
+    <main class="dashboard">
+        <header class="dashboard-title">
+            <h1>Temperatura e Umidade</h1>
+            <p>Acompanhamento da câmara de maturação</p>
+        </header>
 
-  <!-- Biblioteca Chart.js -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="script.js"></script>
+        <div class="dashboard-grid">
+            <section class="dashboard-panel">
+                <div class="dashboard-panel-header">
+                    <h2>Temperatura e Umidade por Horário</h2>
+                    <span>12:00 - 17:00</span>
+                </div>
+                <div class="dashboard-chart-container">
+                    <canvas id="graficoLinhas"></canvas>
+                </div>
+            </section>
+
+            <section class="dashboard-panel">
+                <div class="dashboard-panel-header">
+                    <h2>Médias Mensais</h2>
+                    <span>Janeiro - Junho</span>
+                </div>
+                <div class="dashboard-chart-container">
+                    <canvas id="graficoBarras"></canvas>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
